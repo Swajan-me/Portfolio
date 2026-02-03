@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=3 format=3 uid="uid://dlssnqe78im3q"]
+
+[ext_resource type="Script" uid="uid://4gau55toflgn" path="res://custom_resources/stats.gd" id="1_8ldsy"]
+[ext_resource type="Texture2D" uid="uid://u0r5x50xkaus" path="res://art/mob-skeleton.png" id="1_hh4xh"]
+
+[resource]
+script = ExtResource("1_8ldsy")
+max_health = 10
+art = ExtResource("1_hh4xh")
+metadata/_custom_type_script = "uid://4gau55toflgn"

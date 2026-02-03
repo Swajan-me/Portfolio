@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EnemyStats" load_steps=4 format=3 uid="uid://bg7mrilbqnc7b"]
+
+[ext_resource type="Script" uid="uid://3biu8hff2y27" path="res://custom_resources/enemy_stats.gd" id="1_0tgvx"]
+[ext_resource type="Texture2D" uid="uid://u0r5x50xkaus" path="res://art/mob-skeleton.png" id="1_g6gu7"]
+[ext_resource type="PackedScene" uid="uid://q7k25v8fhmr7" path="res://enemies/mob/mob_enemy_ai.tscn" id="1_mxb1o"]
+
+[resource]
+script = ExtResource("1_0tgvx")
+ai = ExtResource("1_mxb1o")
+max_health = 10
+art = ExtResource("1_g6gu7")

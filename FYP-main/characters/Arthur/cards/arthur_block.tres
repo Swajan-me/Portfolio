@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://g0lb0wplvc80"]
+
+[ext_resource type="Texture2D" uid="uid://54djohu0jj8h" path="res://art/weapons/shield.png" id="1_ewbxf"]
+[ext_resource type="Script" uid="uid://dw44m7g3jn80p" path="res://characters/Arthur/cards/arthur_block.gd" id="2_ewbxf"]
+[ext_resource type="AudioStream" uid="uid://cvurgsdfojfub" path="res://art/music/block sound effect.ogg" id="3_kaftm"]
+
+[resource]
+script = ExtResource("2_ewbxf")
+id = "arthur_block"
+type = 1
+target = 0
+cost = 1
+icon = ExtResource("1_ewbxf")
+tooltip_text = "[center]Gain [color=\"40FF40\"]5[/color] shield.[/center]"
+sound = ExtResource("3_kaftm")
+metadata/_custom_type_script = "uid://bbfcad8pcffaq"

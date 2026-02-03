@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdjq41xr2ev0y"]
+
+[ext_resource type="Script" uid="uid://ba8i410qn68u5" path="res://scenes/enemy/enemy_action_picker.gd" id="1_6waae"]
+[ext_resource type="Script" uid="uid://dlgtrii2ljpqx" path="res://enemies/boss/boss_attack_action.gd" id="2_hxehc"]
+[ext_resource type="Script" uid="uid://w4u5p20gxlhs" path="res://enemies/boss/boss_block_action.gd" id="3_3rars"]
+[ext_resource type="AudioStream" uid="uid://cil7iio1ns1rd" path="res://art/music/BAttack - Chidori.mp3" id="3_hwsjl"]
+[ext_resource type="AudioStream" uid="uid://bpegdif3lb7dn" path="res://art/music/Boss Shield - Barrera Barrier (Sound Effect) - League of Legends.mp3" id="5_lcqbg"]
+
+[node name="BossEnemyAI" type="Node"]
+script = ExtResource("1_6waae")
+
+[node name="BossAttackAction" type="Node" parent="."]
+script = ExtResource("2_hxehc")
+sound = ExtResource("3_hwsjl")
+type = 1
+chance_weight = 3.0
+
+[node name="BossBlockAction" type="Node" parent="."]
+script = ExtResource("3_3rars")
+sound = ExtResource("5_lcqbg")
+type = 1
+chance_weight = 1.0

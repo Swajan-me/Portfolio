@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://dw21gygbjj6i4"]
+
+[ext_resource type="Script" uid="uid://bp251xhq6eb0r" path="res://custom_resources/character_stats.gd" id="1_06aon"]
+[ext_resource type="Texture2D" uid="uid://f1ne03y50rsv" path="res://art/ninja.png" id="1_rw678"]
+[ext_resource type="Resource" uid="uid://bi6756116y24" path="res://characters/Arthur/arthur_starting_deck.tres" id="3_xxxps"]
+
+[resource]
+script = ExtResource("1_06aon")
+character_name = "Ninja"
+description = "- Lower Hp than Hero.
+- Slaying the boss will give
+	 him his freedom.
+- Job hunt is hard for him.
+- Had to make a new game 2-3 
+	weeks before submission."
+portrait = ExtResource("1_rw678")
+starting_deck = ExtResource("3_xxxps")
+cards_per_turn = 4
+max_mana = 3
+max_health = 35
+art = ExtResource("1_rw678")
+metadata/_custom_type_script = "uid://bp251xhq6eb0r"

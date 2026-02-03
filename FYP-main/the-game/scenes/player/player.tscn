@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://4fwot5h0xin6"]
+
+[ext_resource type="Script" uid="uid://c2andd541f1ek" path="res://scenes/player/player.gd" id="1_gmlin"]
+[ext_resource type="PackedScene" uid="uid://bfknq82vkpq6b" path="res://scenes/ui/stat_ui.tscn" id="2_gmlin"]
+[ext_resource type="Texture2D" uid="uid://ct05v5y6ufv73" path="res://art/mc1.png" id="2_lvxji"]
+
+[node name="Player" type="Node2D" groups=["player"]]
+script = ExtResource("1_gmlin")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 5)
+texture = ExtResource("2_lvxji")
+
+[node name="StatsUI" parent="." instance=ExtResource("2_gmlin")]
+offset_top = 45.0
+offset_bottom = 125.0

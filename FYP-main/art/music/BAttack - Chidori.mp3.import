@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cil7iio1ns1rd"
+path="res://.godot/imported/BAttack - Chidori.mp3-74060d81effd4f269c785cd76e703035.mp3str"
+
+[deps]
+
+source_file="res://art/music/BAttack - Chidori.mp3"
+dest_files=["res://.godot/imported/BAttack - Chidori.mp3-74060d81effd4f269c785cd76e703035.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

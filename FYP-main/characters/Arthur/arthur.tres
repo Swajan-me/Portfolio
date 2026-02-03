@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CharacterStats" load_steps=4 format=3 uid="uid://byr1rj2vu2x1o"]
+
+[ext_resource type="Texture2D" uid="uid://cr3krjsuiw5l0" path="res://art/mc.png" id="1_g66gv"]
+[ext_resource type="Script" uid="uid://bp251xhq6eb0r" path="res://custom_resources/character_stats.gd" id="1_qo1ch"]
+[ext_resource type="Resource" uid="uid://bi6756116y24" path="res://characters/Arthur/arthur_starting_deck.tres" id="3_wq4yb"]
+
+[resource]
+script = ExtResource("1_qo1ch")
+character_name = "Hero"
+description = "- Higher Hp than Ninja.
+- Wishes to Slay the boss.
+- Currently unemployed
+- Had to redo his project 
+	because godot 4.4 was bugged
+	which made his project unable to run."
+portrait = ExtResource("1_g66gv")
+starting_deck = ExtResource("3_wq4yb")
+cards_per_turn = 4
+max_mana = 3
+max_health = 60
+art = ExtResource("1_g66gv")
+metadata/_custom_type_script = "uid://bp251xhq6eb0r"

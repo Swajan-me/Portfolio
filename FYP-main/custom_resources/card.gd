@@ -1,0 +1,48 @@
+class_name Card
+extends Resource
+
+enum Type {ATTACK, DEFEND, POWER}
+enum Target {SELF, SINGLE_ENEMY, ALL_ENEMIES, EVERYONE}
+
+@export_group("Card Attributes")
+@export var id: String
+@export var type: Type
+@export var target: Target
+@export var cost: int          # Mana cost
+
+@export_group("Card Visuals")
+@export var icon: Texture           # Texture for the icon.
+@export_multiline var tooltip_text: String
+@export var sound: AudioStream
+
+func is_single_targeted() -> bool:
+	return target == Target.SINGLE_ENEMY
+
+
+func _get_targets(targets: Array[Node]) -> Array[Node]:
+	if not targets:
+		return []
+	
+	var tree := targets[0].get_tree()
+	
+	match target:    # Similar to switch case.
+		Target.SELF:
+			return tree.get_nodes_in_group("player")
+		Target.ALL_ENEMIES:
+			return tree.get_nodes_in_group("enemies")
+		Target.EVERYONE:
+			return tree.get_nodes_in_group("player") + tree.get_nodes_in_group("enemies")
+		_:
+			return [] 
+
+func play(targets: Array[Node], char_stats: CharacterStats) -> void:
+	Events.card_played.emit(self)
+	char_stats.mana -= cost
+	
+	if is_single_targeted():      # If it is single targated, the code in the match is not needed, since it will have the target in the area.
+		apply_effects(targets)
+	else:
+		apply_effects(_get_targets(targets))
+
+func apply_effects(_targets: Array[Node]) -> void:       # Nothing is done here since the attack and the defend cards apply their logic here.
+	pass

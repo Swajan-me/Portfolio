@@ -1,0 +1,37 @@
+[gd_scene load_steps=10 format=3 uid="uid://nmb1tn5mirma"]
+
+[ext_resource type="Script" uid="uid://ba8i410qn68u5" path="res://scenes/enemy/enemy_action_picker.gd" id="1_ww7ea"]
+[ext_resource type="Script" uid="uid://jurg5ishghgm" path="res://enemies/drone/drone_attack_action.gd" id="2_eyvs3"]
+[ext_resource type="Texture2D" uid="uid://bm7fl2qupbesi" path="res://art/weapons/sword1.png" id="3_7jwjb"]
+[ext_resource type="Script" uid="uid://cesltpspbwk71" path="res://enemies/drone/drone_block_action.gd" id="3_a3d0m"]
+[ext_resource type="Script" uid="uid://bwyndkopuwrnx" path="res://custom_resources/intent.gd" id="4_rv3bj"]
+[ext_resource type="AudioStream" uid="uid://c3imh5y0sxx4j" path="res://art/music/drone - Laser Gun Sound Effect.mp3" id="5_gakb0"]
+[ext_resource type="Texture2D" uid="uid://dr7w5o8s3fs2l" path="res://art/weapons/bigShield.png" id="7_qq81j"]
+
+[sub_resource type="Resource" id="Resource_gakb0"]
+script = ExtResource("4_rv3bj")
+number = "2x4"
+icon = ExtResource("3_7jwjb")
+metadata/_custom_type_script = "uid://bwyndkopuwrnx"
+
+[sub_resource type="Resource" id="Resource_j8lx6"]
+script = ExtResource("4_rv3bj")
+number = ""
+icon = ExtResource("7_qq81j")
+metadata/_custom_type_script = "uid://bwyndkopuwrnx"
+
+[node name="DroneEnemyAI" type="Node"]
+script = ExtResource("1_ww7ea")
+
+[node name="DroneAttackAction" type="Node" parent="."]
+script = ExtResource("2_eyvs3")
+intent = SubResource("Resource_gakb0")
+sound = ExtResource("5_gakb0")
+type = 1
+chance_weight = 3.0
+
+[node name="DroneBlockAction" type="Node" parent="."]
+script = ExtResource("3_a3d0m")
+intent = SubResource("Resource_j8lx6")
+type = 1
+chance_weight = 1.0

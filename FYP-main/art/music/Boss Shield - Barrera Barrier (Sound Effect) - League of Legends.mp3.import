@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bpegdif3lb7dn"
+path="res://.godot/imported/Boss Shield - Barrera Barrier (Sound Effect) - League of Legends.mp3-4ae66e6ce3fd7237c34411b56402ad1f.mp3str"
+
+[deps]
+
+source_file="res://art/music/Boss Shield - Barrera Barrier (Sound Effect) - League of Legends.mp3"
+dest_files=["res://.godot/imported/Boss Shield - Barrera Barrier (Sound Effect) - League of Legends.mp3-4ae66e6ce3fd7237c34411b56402ad1f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

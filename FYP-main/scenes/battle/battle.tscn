@@ -1,0 +1,146 @@
+[gd_scene load_steps=21 format=3 uid="uid://ff1i38vdpv6x"]
+
+[ext_resource type="Script" uid="uid://phono7uv6elv" path="res://scenes/battle/battle.gd" id="1_kd6yx"]
+[ext_resource type="PackedScene" uid="uid://b61iws86nuk20" path="res://scenes/enemy/enemy.tscn" id="2_agsc7"]
+[ext_resource type="Script" uid="uid://c252mqgdjfw3k" path="res://scenes/ui/hand.gd" id="2_xd4uy"]
+[ext_resource type="AudioStream" uid="uid://bausod32ht1wq" path="res://art/music/Base - Braum, the Heart of the Freljord  Login Screen - League of Legends.mp3" id="3_n6gaa"]
+[ext_resource type="PackedScene" uid="uid://jrxn1p6khh0d" path="res://scenes/card_target_selector/card_target_selector.tscn" id="3_pll4o"]
+[ext_resource type="PackedScene" uid="uid://4fwot5h0xin6" path="res://scenes/player/player.tscn" id="3_py4tk"]
+[ext_resource type="Resource" uid="uid://byr1rj2vu2x1o" path="res://characters/Arthur/arthur.tres" id="4_agsc7"]
+[ext_resource type="Script" uid="uid://cwviq5xlwwxrj" path="res://scenes/enemy/enemy_handler.gd" id="4_kd6yx"]
+[ext_resource type="Texture2D" uid="uid://cksjmpqoqdp5r" path="res://art/bg2.png" id="4_mvulk"]
+[ext_resource type="PackedScene" uid="uid://bkn5d2dt2sok8" path="res://scenes/battle/battle2.tscn" id="4_w40i5"]
+[ext_resource type="Resource" uid="uid://bg7mrilbqnc7b" path="res://enemies/mob/mob_enemy.tres" id="6_kd6yx"]
+[ext_resource type="Script" uid="uid://tlh4w0qreww8" path="res://scenes/player/player_handler.gd" id="8_mxe8n"]
+[ext_resource type="Script" uid="uid://d2afd544yxpec" path="res://scenes/ui/battle_ui.gd" id="8_t1kk3"]
+[ext_resource type="PackedScene" uid="uid://c573hlsyj82mw" path="res://scenes/ui/mana_ui.tscn" id="11_fisqk"]
+[ext_resource type="PackedScene" uid="uid://d1fhvqmxfbyc8" path="res://scenes/ui/tooltip.tscn" id="12_mxe8n"]
+[ext_resource type="Theme" uid="uid://b5l2tkoo5euy4" path="res://main_theme.tres" id="13_icoan"]
+[ext_resource type="Script" uid="uid://sm3pq3sakm74" path="res://scenes/ui/red_flash.gd" id="15_t1kk3"]
+[ext_resource type="PackedScene" uid="uid://baogabu533djf" path="res://scenes/ui/battle_over_panel.tscn" id="17_6ofp8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w40i5"]
+font_size = 40
+font_color = Color(0.481321, 0.249581, 0.719975, 1)
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7gynk"]
+size = Vector2(1280, 480)
+
+[node name="Battle" type="Node2D"]
+script = ExtResource("1_kd6yx")
+music = ExtResource("3_n6gaa")
+next_battle_scene = ExtResource("4_w40i5")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.737193, 0.737193, 0.737193, 1)
+scale = Vector2(0.333594, 0.336574)
+texture = ExtResource("4_mvulk")
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="RoundLabel" type="Label" parent="."]
+offset_right = 208.0
+offset_bottom = 87.0
+text = "Round 1"
+label_settings = SubResource("LabelSettings_w40i5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardDropArea" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CardDropArea"]
+position = Vector2(640, 240)
+shape = SubResource("RectangleShape2D_7gynk")
+debug_color = Color(0, 0.6, 0.7, 0.238)
+
+[node name="EnemyHandler" type="Node2D" parent="."]
+script = ExtResource("4_kd6yx")
+
+[node name="Enemy" parent="EnemyHandler" instance=ExtResource("2_agsc7")]
+position = Vector2(875, 348)
+stats = ExtResource("6_kd6yx")
+
+[node name="Enemy2" parent="EnemyHandler" instance=ExtResource("2_agsc7")]
+position = Vector2(1079, 348)
+stats = ExtResource("6_kd6yx")
+
+[node name="Player" parent="." instance=ExtResource("3_py4tk")]
+position = Vector2(366, 330)
+stats = ExtResource("4_agsc7")
+
+[node name="CardTargetSelector" parent="." instance=ExtResource("3_pll4o")]
+
+[node name="PlayerHandler" type="Node" parent="." node_paths=PackedStringArray("hand")]
+script = ExtResource("8_mxe8n")
+hand = NodePath("../BattleUI/Hand")
+
+[node name="BattleUI" type="CanvasLayer" parent="." groups=["ui_layer"]]
+script = ExtResource("8_t1kk3")
+
+[node name="Hand" type="HBoxContainer" parent="BattleUI"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -275.0
+offset_top = -120.0
+offset_right = 275.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+script = ExtResource("2_xd4uy")
+
+[node name="ManaUI" parent="BattleUI" instance=ExtResource("11_fisqk")]
+offset_left = 38.0
+offset_top = -134.0
+offset_right = 138.0
+offset_bottom = -34.0
+char_stats = ExtResource("4_agsc7")
+
+[node name="Tooltip" parent="BattleUI" instance=ExtResource("12_mxe8n")]
+offset_top = 20.0
+offset_bottom = 170.0
+
+[node name="EndTurnButton" type="Button" parent="BattleUI"]
+unique_name_in_owner = true
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -168.0
+offset_top = -86.0
+offset_right = -48.0
+offset_bottom = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("13_icoan")
+text = "End Turn"
+
+[node name="RedFlash" type="CanvasLayer" parent="."]
+layer = 2
+script = ExtResource("15_t1kk3")
+
+[node name="ColorRect" type="ColorRect" parent="RedFlash"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.993, 0.272, 0.211, 0)
+
+[node name="Timer" type="Timer" parent="RedFlash"]
+wait_time = 0.2
+one_shot = true
+
+[node name="BattleOverLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="BattleOverPanel" parent="BattleOverLayer" instance=ExtResource("17_6ofp8")]
+visible = false

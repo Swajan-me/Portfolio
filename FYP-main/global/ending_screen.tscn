@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=3 uid="uid://dnadhedvxuywx"]
+
+[ext_resource type="Script" uid="uid://bq8taup2ugoqh" path="res://global/ending_screen.gd" id="1_4aj3i"]
+[ext_resource type="Texture2D" uid="uid://cb5vdgwcj5b63" path="res://art/winner.png" id="1_ammi2"]
+[ext_resource type="Texture2D" uid="uid://chqudnva3wogb" path="res://art/weapons/aoe.png" id="2_4aj3i"]
+[ext_resource type="Texture2D" uid="uid://bk5oxp3waticy" path="res://art/weapons/heart.png" id="3_fucje"]
+
+[sub_resource type="Gradient" id="Gradient_4qff6"]
+offsets = PackedFloat32Array(0, 0.309278, 0.659794, 0.996564, 1)
+colors = PackedColorArray(0.972509, 0.972509, 0.972509, 1, 0.803768, 0.648691, 0.637421, 1, 0.560447, 0.388258, 0.377579, 1, 0.261018, 0.165811, 0.160181, 1, 0.235448, 0.145616, 0.142033, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jsyfl"]
+gradient = SubResource("Gradient_4qff6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_mgqa8"]
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_p3d7w"]
+font_size = 30
+
+[node name="EndingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4aj3i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_jsyfl")
+
+[node name="Ez" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -724.0
+offset_top = -133.0
+offset_right = -34.0
+offset_bottom = -58.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "You have completed the game."
+label_settings = SubResource("LabelSettings_mgqa8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thanks" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -412.0
+offset_top = -37.5
+offset_right = -29.0
+offset_bottom = 37.5
+grow_horizontal = 0
+grow_vertical = 2
+text = "Thank you for playing."
+label_settings = SubResource("LabelSettings_p3d7w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Character" type="Sprite2D" parent="."]
+position = Vector2(244, 482)
+scale = Vector2(5, 5)
+texture = ExtResource("1_ammi2")
+
+[node name="heart" type="Sprite2D" parent="Character"]
+position = Vector2(-10.6, -58.4)
+texture = ExtResource("3_fucje")
+
+[node name="Duck" type="Sprite2D" parent="Character"]
+position = Vector2(148.8, 3.4)
+texture = ExtResource("2_4aj3i")
+
+[node name="heart2" type="Sprite2D" parent="Character"]
+position = Vector2(20.6, -59.6)
+texture = ExtResource("3_fucje")
+
+[node name="heart3" type="Sprite2D" parent="Character"]
+position = Vector2(41, -40.8)
+texture = ExtResource("3_fucje")
+
+[node name="heart4" type="Sprite2D" parent="Character"]
+position = Vector2(-28.2, -41.2)
+texture = ExtResource("3_fucje")
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -464.0
+offset_top = -125.0
+offset_right = -164.0
+offset_bottom = -75.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.2, 1.2)
+text = "Exit "
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

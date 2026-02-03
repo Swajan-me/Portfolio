@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ipangynlx1x5"
+path="res://.godot/imported/boss - Swain, the Noxian Grand General  Login Screen - League of Legends.mp3-4328e3e023f419a9d16b29afa1cebd64.mp3str"
+
+[deps]
+
+source_file="res://art/music/boss - Swain, the Noxian Grand General  Login Screen - League of Legends.mp3"
+dest_files=["res://.godot/imported/boss - Swain, the Noxian Grand General  Login Screen - League of Legends.mp3-4328e3e023f419a9d16b29afa1cebd64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

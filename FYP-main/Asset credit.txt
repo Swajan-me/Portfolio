@@ -1,0 +1,8 @@
+Characters := @JosephSeraph
+https://opengameart.org/content/js-monster-pack-4-ascent
+
+Background := @CraftPix.net 2D Game Assets
+https://opengameart.org/content/elven-land-2d-backgrounds
+
+Big shield = https://free-game-assets.itch.io/free-shield-2d-items-pack
+

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=5 format=3 uid="uid://bi6756116y24"]
+
+[ext_resource type="Script" uid="uid://bbfcad8pcffaq" path="res://custom_resources/card.gd" id="1_bpk2b"]
+[ext_resource type="Script" uid="uid://0r1623siif70" path="res://custom_resources/card_pile.gd" id="2_2y3es"]
+[ext_resource type="Resource" uid="uid://djekaj0x5i8" path="res://characters/Arthur/cards/arthur_melee_attack.tres" id="2_qi7ke"]
+[ext_resource type="Resource" uid="uid://g0lb0wplvc80" path="res://characters/Arthur/cards/arthur_block.tres" id="3_t650s"]
+
+[resource]
+script = ExtResource("2_2y3es")
+cards = Array[ExtResource("1_bpk2b")]([ExtResource("2_qi7ke"), ExtResource("2_qi7ke"), ExtResource("2_qi7ke"), ExtResource("2_qi7ke"), ExtResource("2_qi7ke"), ExtResource("3_t650s"), ExtResource("3_t650s"), ExtResource("3_t650s"), ExtResource("3_t650s"), ExtResource("3_t650s")])
+metadata/_custom_type_script = "uid://0r1623siif70"
