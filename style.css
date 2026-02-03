@@ -1,93 +1,123 @@
-/* Load Custom Font */
 @font-face {
-    font-family: 'Doctor Glitch';
-    src: url('fonts/Doctor Glitch.otf') format('opentype');
+font-family: 'Doctor Glitch';
+src: url('fonts/Doctor%20Glitch.otf') format('opentype');
+font-display: swap;
 }
 
-/* Basic Reset & Background */
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+
 body {
-    background-color: #151515;
-    color: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+background-color: #151515;
+color: #f7f7f7;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Main Container */
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 0px; /* Space between sections */
+display: flex;
+flex-direction: column;
+gap: 0;
 }
 
 .navBar {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 40px;
-    background-color: #111; 
+display: flex;
+justify-content: flex-end;
+padding: 1.25rem 2.5rem;
+background-color: #111;
 }
 
 .navBar ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+list-style: none;
+display: flex;
+gap: 1.5rem;
+margin: 0;
+padding: 0;
 }
 
 .navBar ul li a {
-    color: #f7f7f7;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    transition: all 0.3s ease;
+color: #f7f7f7;
+text-decoration: none;
+font-size: 1.125rem;
+transition: all 0.2s ease;
 }
 
 .navBar ul li a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+text-decoration: underline;
+color: #ffffff;
 }
-
 
 /* Introduction Section */
 .introduction {
-    padding: 80px 100px 60px 100px; /* top, right, bottom, left */
-    text-align: left;
-    background: linear-gradient(to right, #151515 30%, #252525 50%, #ffffff 100%);
+padding: 5rem 2rem 3rem 2rem;
+text-align: left;
+background: linear-gradient(to right, #151515 30%, #252525 60%, #2b2b2b 100%);
 }
 
 /* About Section */
 .about {
-    padding: 60px 100px;
-    text-align: center;
+padding: 3rem 2rem;
+text-align: center;
 }
 
 /* Projects Section */
 .projects {
-    padding: 60px 100px;
-    text-align: center;
+padding: 3rem 2rem;
+text-align: center;
 }
 
 /* Mini Game Section */
 .game {
-    padding: 60px 100px;
-    text-align: center;
+padding: 3rem 2rem;
+text-align: center;
 }
 
 /* Footer */
 footer {
-    padding: 40px;
-    text-align: center;
-    background-color: #111;
+padding: 2.5rem;
+text-align: center;
+background-color: #111;
 }
 
 /* Name Text + Hover Effect */
 .name {
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    transition: font-family 0.3s ease;
+font-size: 2.5rem;
+font-family: 'Pacifico', 'Doctor Glitch', cursive;
+transition: font-family 0.3s ease;
 }
 
 .name:hover {
-    font-family: 'Doctor Glitch', cursive;
+font-family: 'Doctor Glitch', cursive;
+}
+
+/* Buttons converted to link-styled buttons */
+.about-actions {
+display: flex;
+gap: 1rem;
+justify-content: center;
+margin-top: 1rem;
+}
+
+.btn {
+display: inline-block;
+padding: 0.6rem 1rem;
+background: #222;
+color: #fff;
+text-decoration: none;
+border-radius: 6px;
+border: 1px solid rgba(255,255,255,0.06);
+transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.btn:hover {
+background: #333;
+transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (min-width: 900px) {
+.introduction { padding: 6rem 6rem 4rem 6rem; }
+.about, .projects, .game { padding: 4rem 6rem; }
 }
