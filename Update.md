@@ -1,5 +1,7 @@
 <h1>Things to Add for this site</h1>
 
+- Need to make change so that the Doctor font shows in a different place other than my name; currently thinking, it should show up doing the bomb or something.
+
 <h3> Ideas for the site: </h3>
   <ul>1. Bomb </ul>
     <li> Wries to cut </li>
@@ -18,22 +20,23 @@
     <li> 3. </li>
 
   <ul> Specific Site ideas: </ul>
+  Got most of the sites from here:  https://github.com/emmabostian/developer-portfolios
     <li> 1. https://sawad.framer.website/ </li>
       <ul>
         <li>General color, layout seems nice. </li>
         <li>The Single portrait is appealing. </li>
-        <li>**Turns out he is using free template ** from https://framer.com </li>
+        <li><strong>Turns out he is using free template </strong> from https://framer.com </li>
       </ul>
     <li> 2. https://augustopolonio.vercel.app/ </li>
       <ul>
-        <li> **Landing page**; top part of text changing seems nice but everything else is bland. </li>
+        <li> <strong>Landing page</strong>; top part of text changing seems nice but everything else is bland. </li>
       </ul>
     <li> 3. https://sudosidd.dev/</li>
     <ul>
-        <li> Can clearly tell the site is made by AI but, **having a pixil art style mouse seems nice and contact me part with the Sticky note is a nice idea.** </li>
+        <li> Can clearly tell the site is made by AI but, <strong>having a pixil art style mouse seems nice and contact me part with the Sticky note is a nice idea.</strong> </li>
       </ul>
     <li> 4. https://althruist.fyi/ </li>
       <ul>
         <li> 'Different' fonts looks nice. </li>
-        <li> **Button sound clicks**. </li>
+        <li> <strong>Button sound clicks</strong>. </li>
       </ul>
