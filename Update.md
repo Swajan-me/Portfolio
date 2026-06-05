@@ -27,7 +27,7 @@
         <li>The Single portrait is appealing. </li>
         <li><strong>Turns out he is using free template </strong> from https://framer.com </li>
       </ul>
-    <li> 2. https://augustopolonio.vercel.app/ </li>
+    <li><s> 2. https://augustopolonio.vercel.app/ </s></li>
       <ul>
         <li> <strong>Landing page</strong>; top part of text changing seems nice but everything else is bland. </li>
       </ul>
