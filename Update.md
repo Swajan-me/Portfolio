@@ -14,12 +14,12 @@
   <ul>2. Solo Leveling S1 glitch style outro. (Anime I think)</ul>
 
 <h3> Sites for reference that might help: </h3>
-  <ul> General Idea ideas </ul>
+  <ul> 1. General Idea ideas </ul>
     <li> 1. https://nyufie.com/#schedule </li>
     <li> 2. https://lit.link/en/uiseiu </li>
     <li> 3. </li>
 
-  <ul> Specific Site ideas: </ul>
+  <ul> 2. Specific Site ideas: </ul>
   Got most of the sites from here:  https://github.com/emmabostian/developer-portfolios
     <li> 1. https://sawad.framer.website/ </li>
       <ul>
@@ -29,14 +29,16 @@
       </ul>
     <li><s> 2. https://augustopolonio.vercel.app/ </s></li>
       <ul>
-        <li> <strong>Landing page</strong>; top part of text changing seems nice but everything else is bland. </li>
+        <li> <s><strong>Landing page</strong>; top part of text changing seems nice but everything else is bland. </s></li>
       </ul>
     <li> 3. https://sudosidd.dev/</li>
     <ul>
         <li> Can clearly tell the site is made by AI but, <strong>having a pixil art style mouse seems nice and contact me part with the Sticky note is a nice idea.</strong> </li>
       </ul>
-    <li> 4. https://althruist.fyi/ </li>
+    <li> <s>4. https://althruist.fyi/ </s></li>
       <ul>
-        <li> 'Different' fonts looks nice. </li>
-        <li> <strong>Button sound clicks</strong>. </li>
+        <s>
+          <li> 'Different' fonts looks nice. </li>
+          <li> <strong>Button sound clicks</strong>. </li>
+        </s>
       </ul>
