@@ -4,6 +4,8 @@
 - Need to make change so that the Doctor font shows in a different place other than my name; currently thinking, it should show up doing the bomb or something.
 - Change Image file from jpg, png to a webfile or websomething.
 
+Figma: https://www.figma.com/design/KzvAhJUMmN62vIydlhc7uQ/Untitled?node-id=0-1&p=f&t=MGZxRcJQ1Ao8XP1d-0
+
 <h3> Ideas for the site: </h3>
   <ul>1. Bomb </ul>
     <li> Wries to cut </li>
