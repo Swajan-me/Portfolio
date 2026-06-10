@@ -7,6 +7,7 @@
 - Landing page ought to have animation like effect where the profile card is to be elongated enough to cover the whole page and when the page is scrolled it should come the state that it is in right now.
 -
 
+Icons: https://fontawesome.com/
 Figma: ~~Removed~~
 Mockups: https://app.moqups.com/cb1f7761zJlrJhQXCec4vvxhwxmy0r2t/edit/page/ad64222d5
 
