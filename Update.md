@@ -3,10 +3,12 @@
 - Make the site something nice, something you would like to see.
 - Need to make change so that the Doctor font shows in a different place other than my name; currently thinking, it should show up doing the bomb or something.
 - Change Image file from jpg, png to a webfile or websomething.
-- **Pull Projects from github and show their display dm file on that project when hovered.**
+- **Pull Projects from github and show their display MD file on that project when hovered.**
+- Landing page ought to have animation like effect where the profile card is to be elongated enough to cover the whole page and when the page is scrolled it should come the state that it is in right now.
 -
 
-Figma: https://www.figma.com/design/KzvAhJUMmN62vIydlhc7uQ/Untitled?node-id=0-1&p=f&t=MGZxRcJQ1Ao8XP1d-0
+Figma: ~~Removed~~
+Mockups: https://app.moqups.com/cb1f7761zJlrJhQXCec4vvxhwxmy0r2t/edit/page/ad64222d5
 
 <h3> Ideas for the site: </h3>
   <ul>1. Bomb </ul>
