@@ -21,6 +21,7 @@ Mockups: https://app.moqups.com/cb1f7761zJlrJhQXCec4vvxhwxmy0r2t/edit/page/ad642
         <li> Close site.</li>
        <br>
   <ul>2. Solo Leveling S1 glitch style outro. (Anime I think)</ul>
+  <!-- Add more ideas here for the site. -->
 
 <h3> Sites for reference that might help: </h3>
   <ul> 1. General Idea ideas </ul>
