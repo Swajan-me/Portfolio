@@ -1,0 +1,35 @@
+.game-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo1 {
+    position: fixed;
+    top: 10rem;             
+    width: 260px;
+    height: auto;           
+    overflow-y: visible;
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+
+}
+
+.logo1:hover {
+    background: #2e2e2e;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.25rem;
+    text-align: center;
+    background-color: #202020;
+    z-index: 100;
+}
