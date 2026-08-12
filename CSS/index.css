@@ -62,16 +62,16 @@ padding: 3rem 2rem;
 text-align: center;
 }
 
-
-
 .name {
     color: #ff8b71;
   }
+
 
 #role::after {
   content: "|";
   animation: blink 0.8s infinite;
 }
+
 
 @keyframes blink {
   50% {
@@ -86,7 +86,6 @@ gap: 1rem;
 justify-content: center;
 margin-top: 1rem;
 }
-
 
 /* Responsive adjustments */
 @media (min-width: 900px) {

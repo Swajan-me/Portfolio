@@ -5,8 +5,10 @@
     margin-top: 1rem;
 }
 
-.logo1 {
-    position: fixed;
+
+
+.league, .apex, .rainbow{
+    text-align: center;
     top: 10rem;             
     width: 260px;
     height: auto;           
@@ -14,14 +16,13 @@
     background: #1e1e1e;
     border-radius: 8px;
     padding: 1.5rem;
-
 }
 
-.logo1:hover {
-    background: #2e2e2e;
+
+.league:hover, .apex:hover, .rainbow:hover {
+    background: #222222;
     transform: translateY(-2px);
 }
-
 
 footer {
     position: fixed;
