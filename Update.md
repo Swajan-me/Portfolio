@@ -8,6 +8,8 @@
 - Draw something on the games sections to get something out of it, interactive and rewarding.
 - Variable for nav and footer? as JS or something?
 
+- Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
+
 Icons: https://fontawesome.com/
 Figma: ~~Removed~~
 Mockups: https://app.moqups.com/cb1f7761zJlrJhQXCec4vvxhwxmy0r2t/edit/page/ad64222d5
