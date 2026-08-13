@@ -5,12 +5,15 @@
     margin-top: 1rem;
 }
 
-
+.gameicon{
+    height: 200px;
+    width: 300px;
+}   
 
 .league, .apex, .rainbow{
     text-align: center;
     top: 10rem;             
-    width: 260px;
+    width: 350px;
     height: auto;           
     overflow-y: visible;
     background: #1e1e1e;
@@ -18,11 +21,12 @@
     padding: 1.5rem;
 }
 
-
 .league:hover, .apex:hover, .rainbow:hover {
     background: #222222;
     transform: translateY(-2px);
 }
+
+
 
 footer {
     position: fixed;

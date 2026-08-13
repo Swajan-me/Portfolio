@@ -7,6 +7,8 @@
 - Landing page ought to have animation like effect where the profile card is to be elongated enough to cover the whole page and when the page is scrolled it should come the state that it is in right now.
 - Draw something on the games sections to get something out of it, interactive and rewarding.
 - ~~Variable for nav and footer? as JS or something?~~
+- Remove the hobbies/interest and just put the 100 things to do as a list?
+- pop up on league and other games for achievement/state page.
 
 - Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
 
