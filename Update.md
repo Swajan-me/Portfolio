@@ -9,6 +9,7 @@
 - ~~Variable for nav and footer? as JS or something?~~
 - Remove the hobbies/interest and just put the 100 things to do as a list?
 - pop up on league and other games for achievement/state page.
+  - What am i going to show for other games? make a list of games as well GOW and more.
 
 - Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
 
