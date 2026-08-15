@@ -2,8 +2,8 @@ const achievementData = {
     league: `
         <h2>League of Legends</h2>
         <img src="../Images/lol1.png" alt="lol">
-        <p>Peak rank: Gold II</p>
-        <p>Main: Jinx, Caitlyn</p>
+        <p>Peak rank: Gold IV</p>
+        <p>Main: supprot?</p>
         <!-- add whatever content you want -->
     `,
     apex: `
