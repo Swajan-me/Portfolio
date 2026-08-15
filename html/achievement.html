@@ -25,26 +25,36 @@
             <div class="game-actions">
                 <div class="league">
                     <img class="gameicon" src="../Images/lol1.png" alt="lol">
-                    <a class="btn" href="https://u.gg/lol/profile/sg2/%EC%86%8C%EC%A3%BC%CE%B9-uwu/overview" target="_blank"> League of Legends </a>
+                    <a class="btn" href="https://u.gg/lol/profile/sg2/%EC%86%8C%EC%A3%BC%CE%B9-uwu/overview" target="_blank"> U.gg Stats </a>
+                    <a class="btn" data-game="league">League of Legends</a>
                 </div>
 
                 <div class="apex">
                     <img class="gameicon" src="../Images/apex1.png" alt="apex">
-                    <a class="btn" href="#apex"> Apex Legends </a>
+                    <a class="btn" data-game="apex">Apex Legends</a>
                 </div>
-                
+
                 <div class="rainbow">
                     <img class="gameicon" src="../Images/rainbow6.png" alt="rainbow">
-                    <a class="btn" href="#rainbow"> Rainbow Six Siege </a>
+                    <a class="btn" data-game="rainbow">Rainbow Six Siege</a>
                 </div>
 
+            </div>
 
-                
+    </div>
+
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="modal">
+                    <button class="modal-close" id="modalClose">✕</button>
+                    <div class="modal-content" id="modalContent">
+                        <!-- content injected by JS --> 
+                    </div>
+                </div>
             </div>
            
     </div>
 
     <script src="../js/components.js"></script>
-    
+    <script src="../js/achievements.js"></script>
 </body>
 </html>
