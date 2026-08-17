@@ -6,7 +6,11 @@
     
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="../CSS/components.css">
-    <link href="./html/headnfoot.html">
+    <link rel="stylesheet" href="./CSS/gitmdloader.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js"></script>
+    <script src="./js/gitmdloader.js"></script>   
+    
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- Script is needed for social media icons -->
@@ -31,9 +35,16 @@
         <main class="content">
             <section id="projects" class="projects">
                 <h2>Projects</h2>
-                <!-- Make it into two parts, college and personal. -->
+
+                <div id="projectList" class="project-grid"></div>
+
+                <div id="projectMDPopup" class="md-popup">
+                    <div class="md-popup-content">
+                        <span class="closeMD">&times;</span>
+                        <div id="projectMDContent"></div>
+                    </div>
+                </div>
                  
-                
             </section>
 
             <section id="about" class="about">
@@ -114,7 +125,6 @@
 
     <script src="/js/components.js"></script>
     <script src="./js/index.js"></script>    
-
 </body>
 </html>
 
