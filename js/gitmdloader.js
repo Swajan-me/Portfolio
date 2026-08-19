@@ -1,33 +1,26 @@
 
-const GITHUB_TOKEN = "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"; 
+const GITHUB_USERNAME = "Swajan-me";
 
 const pollTime = 30000; 
 
 const projects = {
-    fyp: { owner: "Swajan-me", repo: "FYP", path: "README.md", branch: "main" }
-    // add more like: name: { owner: "...", repo: "...", path: "README.md", branch: "main" }
+    fyp: "https://raw.githubusercontent.com/Swajan-me/FYP/refs/heads/main/README.md"
+    // other projects here, same as above..
 };
 
 let activePoll = null;
 
 function showReadme(projectKey, elementId) {
-    const proj = projects[projectKey];
+    const url = projects[projectKey];
     const el = document.getElementById(elementId);
 
-    if (!proj) {
+    if (!url) {
         el.innerHTML = "<p>No project found for '" + projectKey + "'.</p>";
         return;
     }
 
-    const url = `https://api.github.com/repos/${proj.owner}/${proj.repo}/contents/${proj.path}?ref=${proj.branch}`;
-
     function fetchAndShow() {
-        fetch(url, {
-            headers: {
-                Accept: "application/vnd.github.raw",
-                Authorization: `token ${GITHUB_TOKEN}`
-            }
-        })
+        fetch(url + "?_=" + Date.now()) // stops old cached version from showing
             .then(res => {
                 if (!res.ok) throw new Error("HTTP " + res.status);
                 return res.text();
@@ -48,30 +41,18 @@ function stopReadmePolling() {
     clearInterval(activePoll);
 }
 
-
-// ---------- PART 2: project grid + click-to-view popup ----------
-// Use this if you want a grid of ALL your repos (public + private
-// that this token can see), each opening its README in a popup.
-
 async function loadGitHubProjects() {
     const container = document.getElementById("projectList");
 
     try {
-        // /user/repos (not /users/{username}/repos) because it's
-        // authenticated — this is what lets private repos show up.
-        const response = await fetch("https://api.github.com/user/repos", {
-            headers: { Authorization: `token ${GITHUB_TOKEN}` }
-        });
-
+        const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`);
         if (!response.ok) throw new Error("HTTP " + response.status);
         const repos = await response.json();
 
         repos.forEach(repo => {
             const repoItem = document.createElement("div");
             repoItem.className = "projectItem";
-            repoItem.dataset.owner = repo.owner.login;
-            repoItem.dataset.repo = repo.name;
-            repoItem.dataset.branch = repo.default_branch;
+            repoItem.dataset.md = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repo.name}/${repo.default_branch}/README.md`;
 
             repoItem.innerHTML = `
                 <h3>${repo.name}</h3>
@@ -98,18 +79,10 @@ function attachProjectClickEvents() {
 
     projectItems.forEach(item => {
         item.addEventListener("click", () => {
-            const owner = item.dataset.owner;
-            const repo = item.dataset.repo;
-            const branch = item.dataset.branch;
-            const url = `https://api.github.com/repos/${owner}/${repo}/contents/README.md?ref=${branch}`;
+            const mdPath = item.dataset.md;
 
             function fetchAndShow() {
-                fetch(url, {
-                    headers: {
-                        Accept: "application/vnd.github.raw",
-                        Authorization: `token ${GITHUB_TOKEN}`
-                    }
-                })
+                fetch(mdPath + "?_=" + Date.now())
                     .then(res => {
                         if (!res.ok) throw new Error("HTTP " + res.status);
                         return res.text();
