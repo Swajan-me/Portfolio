@@ -5,7 +5,6 @@
     margin-top: 20px;
 }
 
-/* drop to 2 per row on tablets, 1 per row on phones */
 @media (max-width: 900px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -21,8 +20,8 @@
 .projectItem {
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 16px;
-    background: #fff;
+    padding: 64px;
+    background: #1e1e1e;
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -58,7 +57,7 @@
 }
 
 .md-popup-content {
-    background: #fff;
+    background: #1e1e1e;
     max-width: 700px;
     width: 90%;
     max-height: 80vh;
@@ -74,9 +73,9 @@
     right: 18px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    color: #f8f8f8;
 }
 
 .closeMD:hover {
-    color: #000;
+    color: #c0c0c0;
 }
