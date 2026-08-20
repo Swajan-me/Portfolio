@@ -6,6 +6,10 @@ body {
     font-family: "DT Nightingale","DT Nightingale Placeholder",serif;
 }
 
+body.subpage {
+    padding-top: 0px;
+}
+
 .layout {
     display: flex;
     margin: 0 auto;
@@ -24,11 +28,17 @@ body {
 }
 
 .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 2.5rem;
     background-color: #a58559;
+    z-index: 1000;
 }
 
 .navBar ul {

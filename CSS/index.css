@@ -12,9 +12,13 @@ font-display: swap;
   align-items: center;
 }
 
+.socials-cv{
+  align-items: right;
+}
+
 .profile-card {
     position: fixed;
-    top: 10rem;               /* sit below navbar */
+    top: 10rem;         
     width: 260px;
     height: auto;            /* natural height — no stretching */
     overflow-y: visible;
@@ -33,7 +37,7 @@ font-display: swap;
 
 .content {
     flex: 1;
-    margin-left: 300px;      /* sidebar width + gap */
+    margin-left: 300px;     
     padding: 2rem 0;
 }
 

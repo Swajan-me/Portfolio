@@ -1,3 +1,8 @@
+.gamelist {
+    padding-top: 80px; /* clears the fixed navbar */
+    padding-bottom: 60px; /* clears the fixed footer */
+}
+
 .game-actions {
     display: flex;
     gap: 1rem;
@@ -11,8 +16,7 @@
 }   
 
 .league, .apex, .rainbow{
-    text-align: center;
-    top: 10rem;             
+    text-align: center;           
     width: 350px;
     height: auto;           
     overflow-y: visible;

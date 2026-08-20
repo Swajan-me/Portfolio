@@ -28,4 +28,5 @@ const footer = `
 </footer>`;
 
 document.body.insertAdjacentHTML('afterbegin', navbar);
+
 document.body.insertAdjacentHTML('beforeend', footer);
