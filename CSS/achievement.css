@@ -16,13 +16,13 @@
     width: 350px;
     height: auto;           
     overflow-y: visible;
-    background: #1e1e1e;
+    background: #ac8958;
     border-radius: 8px;
     padding: 1.5rem;
 }
 
 .league:hover, .apex:hover, .rainbow:hover {
-    background: #222222;
+    background: #b88e53;
     transform: translateY(-2px);
 }
 
@@ -71,6 +71,6 @@ footer {
     width: 100%;
     padding: 0.25rem;
     text-align: center;
-    background-color: #202020;
+    background-color: #a58559;
     z-index: 100;
 }

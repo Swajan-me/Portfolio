@@ -21,14 +21,14 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 64px;
-    background: #1e1e1e;
+    background: #aa8a5c;
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .projectItem:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 16px #a8824c;
 }
 
 .projectItem h3 {
@@ -38,7 +38,7 @@
 
 .projectItem p {
     margin: 0;
-    color: #555;
+    color: #e7e7e7;
     font-size: 0.9rem;
 }
 

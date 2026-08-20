@@ -1,5 +1,5 @@
 body {
-    background-color: #272727;
+    background-color: #B39771;
     color: #f7f7f7;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 2.5rem;
-    background-color: #202020;
+    background-color: #a58559;
 }
 
 .navBar ul {
@@ -54,7 +54,7 @@ body {
 .btn {
     display: inline-block;
     padding: 0.6rem 1rem;
-    background: #222;
+    background: #aa8a5c;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
@@ -63,7 +63,7 @@ body {
 }
 
 .btn:hover {
-    background: #333;
+    background: #a8824c;
     transform: translateY(-2px);
 }
 
@@ -71,5 +71,5 @@ body {
 footer {
     padding: 0.25rem;
     text-align: center;
-    background-color: #202020;
+    background-color: #a58559;
 }

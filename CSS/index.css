@@ -7,13 +7,6 @@ font-display: swap;
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 
-body {
-background-color: #272727;
-color: #f7f7f7;
-margin: 0;
-padding: 0;
-font-family: "DT Nightingale","DT Nightingale Placeholder",serif;
-}
 
 .socials {
   align-items: center;
@@ -25,7 +18,7 @@ font-family: "DT Nightingale","DT Nightingale Placeholder",serif;
     width: 260px;
     height: auto;            /* natural height — no stretching */
     overflow-y: visible;
-    background: #1e1e1e;
+    background: #aa8a5c;
     border-radius: 8px;
     padding: 1.5rem;
 }
