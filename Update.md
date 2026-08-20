@@ -13,6 +13,8 @@
 
 - Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
 
+- MAJOR UPDATE IDEA: Change the whole index page into something differnet since every fucking portfolio site is ass and boring, make it something nice, like point number one, jinx from arcane vibe, do it now or hold your peace!!
+
 Icons: https://fontawesome.com/
 Figma: ~~Removed~~
 Mockups: https://app.moqups.com/cb1f7761zJlrJhQXCec4vvxhwxmy0r2t/edit/page/ad64222d5
