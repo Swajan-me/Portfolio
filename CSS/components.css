@@ -6,19 +6,6 @@ body {
     font-family: "DT Nightingale","DT Nightingale Placeholder",serif;
 }
 
-body.subpage {
-    padding-top: 0px;
-}
-
-.layout {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1400px;
-    gap: 3rem;
-    padding: 0 2rem;
-    /* No height, no overflow */
-}
-
 .logo {
     width: 40px;
     height: 40px;
