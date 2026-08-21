@@ -20,13 +20,13 @@
     width: 350px;
     height: auto;           
     overflow-y: visible;
-    background: #ac8958;
+    background: #aa844f;
     border-radius: 8px;
     padding: 1.5rem;
 }
 
 .league:hover, .apex:hover, .rainbow:hover {
-    background: #b88e53;
+    background: #c28a3d;
     transform: translateY(-2px);
 }
 

@@ -1,6 +1,6 @@
 body {
-    background-color: #B39771;
-    color: #f7f7f7;
+    background-color: #b69567;
+    color: #fffff4;
     margin: 0;
     padding: 0;
     font-family: "DT Nightingale","DT Nightingale Placeholder",serif;
@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 2.5rem;
-    background-color: #a58559;
+    background-color: #aa844f;
     z-index: 1000;
 }
 
@@ -51,7 +51,7 @@ body {
 .btn {
     display: inline-block;
     padding: 0.6rem 1rem;
-    background: #aa8a5c;
+    background: #aa844f;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
@@ -60,7 +60,7 @@ body {
 }
 
 .btn:hover {
-    background: #a8824c;
+    background: #aa762e;
     transform: translateY(-2px);
 }
 
@@ -68,5 +68,5 @@ body {
 footer {
     padding: 0.25rem;
     text-align: center;
-    background-color: #a58559;
+    background-color: #aa844f;
 }
