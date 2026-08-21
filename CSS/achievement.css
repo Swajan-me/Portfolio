@@ -1,80 +1,78 @@
 .gamelist {
-    padding-top: 80px; /* clears the fixed navbar */
-    padding-bottom: 60px; /* clears the fixed footer */
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .game-actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .gameicon{
-    height: 200px;
-    width: 300px;
+  height: 200px;
+  width: 300px;
 }   
 
 .league, .apex, .rainbow{
-    text-align: center;           
-    width: 350px;
-    height: auto;           
-    overflow-y: visible;
-    background: #aa844f;
-    border-radius: 8px;
-    padding: 1.5rem;
+  text-align: center;           
+  width: 350px;
+  height: auto;           
+  overflow-y: visible;
+  background: #aa844f;
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
 .league:hover, .apex:hover, .rainbow:hover {
-    background: #c28a3d;
-    transform: translateY(-2px);
+  background: #c28a3d;
+  transform: translateY(-2px);
 }
 
 .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-overlay.active {
-    display: flex;
+  display: flex;
 }
 
 .modal {
-    background: #1e1e1e;
-    border-radius: 10px;
-    padding: 2rem;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    max-height: 80vh;
-    overflow-y: auto;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-
-
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.25rem;
-    text-align: center;
-    background-color: #a58559;
-    z-index: 100;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: #a58559;
+  z-index: 100;
 }

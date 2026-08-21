@@ -8,52 +8,52 @@ font-display: swap;
 *, *::before, *::after { box-sizing: border-box; }
 
 body.subpage {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .layout {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1400px;
-    gap: 3rem;
-    padding: 0 2rem;
-    padding-top: 5rem;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1400px;
+  gap: 3rem;
+  padding: 0 2rem;
+  padding-top: 5rem;
 }
 
 .socials-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
 }
 
 .socials {
-    display: flex;
-    gap: 0.55rem;
-    align-items: center;
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
 }
 .socials-cv {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile-card {
-    position: fixed;
-    top: 10rem;         
-    width: 260px;
-    height: auto;            
-    overflow-y: visible;
-    background: #aa844f;
-    border-radius: 8px;
-    padding: 1.5rem;
+  position: fixed;
+  top: 10rem;         
+  width: 260px;
+  height: auto;            
+  overflow-y: visible;
+  background: #aa844f;
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
 .profile-card img {
-    width: 100%;
-    height: 200px;         
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
+  width: 100%;
+  height: 200px;         
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
 }
 
 .content {
@@ -88,8 +88,8 @@ text-align: center;
 }
 
 .name {
-    color: #ff8b71;
-  }
+  color: #ff8b71;
+}
 
 
 #role::after {
@@ -106,14 +106,14 @@ text-align: center;
 
 /* Buttons converted to link-styled buttons */
 .about-actions {
-display: flex;
-gap: 1rem;
-justify-content: center;
-margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;   
 }
 
 /* Responsive adjustments */
 @media (min-width: 900px) {
-.introduction { padding: 6rem 6rem 4rem 6rem; }
-.about, .projects, .game { padding: 4rem 6rem; }
+  .introduction { padding: 6rem 6rem 4rem 6rem; }
+  .about, .projects, .game { padding: 4rem 6rem; }
 }
