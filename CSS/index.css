@@ -20,17 +20,22 @@ body.subpage {
     padding-top: 5rem;
 }
 
+.socials-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
 .socials {
     display: flex;
     gap: 0.55rem;
     align-items: center;
-    margin-top: 0.5rem;
 }
-/* .socials-cv {
+.socials-cv {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 0.5rem;
-} */
+    align-items: center;
+}
 
 .profile-card {
     position: fixed;
