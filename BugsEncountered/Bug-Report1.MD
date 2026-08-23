@@ -1,16 +1,16 @@
 # Bug ID: BUG-001
 
-## Title: Fixed content overflow
+###### Title: Fixed content overflow
 
-## Component: Layout
+###### Component: Layout
 
-## Environment: Firefox, Windows 11
+###### Environment: Firefox, Windows 11
 
-## Severity: Medium
+###### Severity: Medium
 
-## Priority: High
+###### Priority: High
 
-## Status: Fixed
+###### Status: **Fixed**
 
 **Description**:
 The content/ major components of the website were getting out the display area and overlapping with other parts of the site.
@@ -28,3 +28,5 @@ The content was being displayed in random vertical order where the information w
 
 **Fix Applied**:
 All the necessary information was placed under the main class "content" where the body stores the information to be displayed.
+
+![bug1](b1.png)
