@@ -69,23 +69,50 @@ body.subpage {
   text-align: center;
 }
 
-/* About Section */
 .about {
   padding: 3rem 2rem;
   text-align: center;
 }
 
-/* Projects Section */
+
 .projects {
-padding: 3rem 2rem;
-text-align: center;
+  padding: 3rem 2rem;
+  text-align: center;
 }
 
-/* Mini Game Section */
 .game {
-padding: 3rem 2rem;
-text-align: center;
+  padding: 3rem 2rem;
+  text-align: center;
 }
+
+.pillar-card {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  background: transparent;  /* no fill, just border */
+  transition: border-color 0.2s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pillar-card h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;  /* spaced out caps */
+  text-transform: uppercase;
+  color: #050505;           /* accent color */
+  margin-bottom: 1rem;
+}
+
 
 .name {
   color: #ff8b71;
