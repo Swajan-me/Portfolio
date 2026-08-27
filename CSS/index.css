@@ -89,7 +89,7 @@ body.subpage {
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 12px;
   padding: 2rem;
-  background: transparent;  /* no fill, just border */
+  background: transparent; 
   transition: border-color 0.2s ease;
 }
 
@@ -107,9 +107,9 @@ body.subpage {
 
 .pillar-card h3 {
   font-size: 0.75rem;
-  letter-spacing: 0.15em;  /* spaced out caps */
+  letter-spacing: 0.15em;  
   text-transform: uppercase;
-  color: #050505;           /* accent color */
+  color: #050505;       
   margin-bottom: 1rem;
 }
 
