@@ -41,15 +41,18 @@
         <main class="content">
 
             <section id="home" class="home">
+                <div class="fade">
                 <h2>Welcome To My Portfolio</h2>
                 <p>
                     With a keen eye for detail and a drive for continuous learning, I have developed a diverse skill set related to game development, web development, and 
                     problem-solving. Through various projects and experiences, I have demonstrated the ability to adapt to new challenges and deliver high-quality results. 
                     This portfolio showcases my projects, achievements, and interests.
                 </p>
+                </div>
             </section>
 
             <section id="about" class="about">
+                <div class="fade">
                 <section id="about" class="about">
                     <div class="about-heading">
                         <h2>About Me</h2>
@@ -76,9 +79,11 @@
                         </div>
                     </div>
                 </section>
+                </div>
             </section>
 
             <section id="projects" class="projects">
+                <div class="fade">
                 <h2>Projects</h2>
                     <p>
                         Projects are directly linked from my GitHub. The MD files are loaded and displayed as a popup. You can click on the project to view the details.
@@ -92,11 +97,11 @@
                         <div id="projectMDContent"></div>
                     </div>
                 </div>
-                 
+                </div>
             </section>
 
             <section id="games" class="game">
-
+                <div class="fade">
                 <h2>About Me</h2>
                 <div class="about-actions">
                     <!-- This shit needs to be revamped.-->
@@ -109,10 +114,29 @@
                     <a class="btn" href="#interests"> Screenshots?? </a>
                 </div>
 
-                
+                </div>
             </section>
 
-            
+            <section id="contact-section" class="contact">
+                <div class="fade">
+                <h2>Contact Me</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere porro eum voluptas ipsum, iure quidem provident vero quos repudiandae corporis aliquid explicabo similique optio, eaque voluptates expedita culpa esse nihil.
+                </p>
+
+                <form id="contact-form" action="https://formspree.io/f/mnqvydqv" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="_replyto" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+                </div>
         </main>
     </div>
 

@@ -9,7 +9,7 @@ font-display: swap;
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;  /*Change it to proximity should work but on what i want.*/
   overflow-y: scroll;
   height: 100%;
 }
@@ -22,6 +22,17 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 body.subpage {
@@ -100,6 +111,12 @@ body.subpage {
 .game {
   padding: 3rem 2rem;
   text-align: center;
+}
+
+#contact-section {
+    scroll-snap-align: none;
+    height: auto;
+    min-height: 100vh;
 }
 
 .pillar-card {
