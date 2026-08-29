@@ -25,14 +25,14 @@ section {
 }
 
 .fade {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .fade.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 body.subpage {
@@ -114,9 +114,9 @@ body.subpage {
 }
 
 #contact-section {
-    scroll-snap-align: none;
-    height: auto;
-    min-height: 100vh;
+  scroll-snap-align: none;
+  height: auto;
+  min-height: 100vh;
 }
 
 .pillar-card {
@@ -147,11 +147,9 @@ body.subpage {
   margin-bottom: 1rem;
 }
 
-
 .name {
   color: #ff8b71;
 }
-
 
 #role::after {
   content: "|";

@@ -14,7 +14,7 @@
 - Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
 
 - MAJOR UPDATE IDEA: Change the whole index page into something differnet since every fucking portfolio site is ass and boring, make it something nice, like point number one, jinx from arcane vibe, do it now or hold your peace!!
-  - Make the image flip and the page changes as well.
+  - ~~Make the image flip and the page changes as well.~~
 
 Icons: https://fontawesome.com/
 Figma: ~~Removed~~
