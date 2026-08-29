@@ -3,10 +3,10 @@
 - Make the site something nice, something you would like to see.
 - Need to make change so that the Doctor font shows in a different place other than my name; currently thinking, it should show up doing the bomb or something.
 - Change Image file from jpg, png to a webfile or websomething.
-- **Pull Projects from github and show their display MD file on that project when hovered.**
+- ~~**Pull Projects from github and show their display MD file on that project when hovered.**~~ **DONE**
 - Landing page ought to have animation like effect where the profile card is to be elongated enough to cover the whole page and when the page is scrolled it should come the state that it is in right now.
-- Draw something on the games sections to get something out of it, interactive and rewarding.
-- ~~Variable for nav and footer? as JS or something?~~
+- ~~Draw something on the games sections to get something out of it, interactive and rewarding.~~ **_Cancelled_**
+- ~~Variable for nav and footer? as JS or something?~~ **DONE**
 - Remove the hobbies/interest and just put the 100 things to do as a list?
 - pop up on league and other games for achievement/state page.
   - What am i going to show for other games? make a list of games as well GOW and more.
@@ -14,7 +14,9 @@
 - Bro AM i just fucking stupid??? game achiemvents sn screenshots are the same wtf am i doing??? tmr for sure/
 
 - MAJOR UPDATE IDEA: Change the whole index page into something differnet since every fucking portfolio site is ass and boring, make it something nice, like point number one, jinx from arcane vibe, do it now or hold your peace!!
-  - ~~Make the image flip and the page changes as well.~~
+  - ~~Make the image flip and the page changes as well.~~ **DONE**
+
+- In about page add the list of programs I know or something, might have to make a simple site or something.
 
 Icons: https://fontawesome.com/
 Figma: ~~Removed~~
