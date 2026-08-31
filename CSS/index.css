@@ -131,6 +131,13 @@ body.subpage {
   min-height: 100vh;
 }
 
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
 .pillar-card {
   border: 1.5px solid rgba(255,255,255,0.15);
   border-radius: 22px;
@@ -142,13 +149,6 @@ body.subpage {
 .pillar-card:hover {
   transform: translateY(-4px);
   border-color: rgba(255,255,255,0.4);
-}
-
-.pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .about-icon {

@@ -7,7 +7,7 @@ const navbar = `
         <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
-            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#about">Skills</a></li>
             <li><a href="/index.html#contact">Contact</a></li>
         </ul>
     </nav>
