@@ -132,8 +132,8 @@ body.subpage {
 }
 
 .pillar-card {
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,0.15);
+  border-radius: 22px;
   padding: 2rem;
   background: transparent; 
   transition: border-color 0.2s ease;
@@ -151,12 +151,10 @@ body.subpage {
   margin-top: 2rem;
 }
 
-/* .about-icon {
-  width: 100%;
-  height: 200px;         
-  border-radius: 6px;
+.about-icon {
+  font-size: 5rem;
   display: block;
-} */
+}
 
 .name {
   color: #ff8b71;
