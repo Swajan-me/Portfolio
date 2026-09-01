@@ -16,9 +16,9 @@ const navbar = `
 const footer = `
 <footer id="contact">
     <p>Contact me: 
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRpclVZDQvQbBQTxlPPkgpFfWtHjxnQtZZdHBtmwLwcCWCbHQMNtcldrFpkFDGrwrtMjQPb" target="_blank" rel="noopener noreferrer">
+        <a href="https://mail.google.com/mail/?view=cm&to=swajanshrestha3180@gmail.com" target="_blank" rel="noopener noreferrer">
             <i class="fa-regular fa-envelope"></i>
-        </a> 
+        </a>
         or 
         <a href="https://www.linkedin.com/in/swajan-rajbanshi-203955302/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin-in"></i>

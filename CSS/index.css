@@ -13,11 +13,17 @@ font-display: swap;
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;  /*Change it to proximity should work but on what i want.*/
   overflow-y: scroll;
   height: 100%;
+  -ms-overflow-style: none;  /* for IE and Edge */
+  scrollbar-width: none;     /* for Firefox and other browsers */
 }
 
 section {
