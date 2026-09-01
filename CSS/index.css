@@ -120,8 +120,12 @@ body.subpage {
   text-align: center;
 }
 
-
 .projects {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact{
   padding: 3rem 2rem;
   text-align: center;
 }
