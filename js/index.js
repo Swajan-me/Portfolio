@@ -50,3 +50,20 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+
+const homeSection = document.querySelector('#home');
+const profileCard = document.querySelector('.profile-card');
+
+const profileObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            // home section left the screen, show the card
+            profileCard.classList.add('visible');
+        } else {
+            // back on home section, hide the card
+            profileCard.classList.remove('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+profileObserver.observe(homeSection);

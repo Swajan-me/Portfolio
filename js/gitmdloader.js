@@ -56,7 +56,7 @@ async function loadGitHubProjects() {
 
             repoItem.innerHTML = `
                 <h3>${repo.name}</h3>
-                <p>${repo.description ?? "No description available"}</p>
+                <p>${repo.description ?? "Click for more information!"}</p>
             `;
 
             container.appendChild(repoItem);
