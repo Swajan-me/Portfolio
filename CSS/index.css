@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Skalinyas';
-    src: url('../fonts/Skalinyas.otf') format('opentype'); /* was wrongly set to truetype */
+    src: url('../fonts/Skalinyas.otf') format('opentype');
     font-display: swap;
 }
 
@@ -52,102 +52,6 @@ section {
     align-items: center;
 }
 
-.contact-label {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.5;
-    display: block;
-    margin-bottom: 1.5rem;
-}
-
-.contact-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.contact-sub {
-    font-size: 1rem;
-    opacity: 0.6;
-    max-width: 480px;
-    line-height: 1.6;
-    text-align: left;
-    margin-bottom: 2rem;
-}
-
-.contact-cards {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 12px;
-    overflow: hidden;
-    max-width: 480px;
-    width: 100%;
-}
-
-.contact-card {
-    padding: 1rem 1.25rem;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.contact-card:last-child {
-    border-bottom: none;
-}
-
-.contact-card-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #a58559; /* your accent color */
-    opacity: 0.8;
-}
-
-.contact-card a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease;
-}
-
-.contact-card a:hover {
-    opacity: 0.6;
-}
-
-/* contact section alignment */
-#contact-section {
-    scroll-snap-align: start;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* left aligned like the reference */
-    padding: 2rem 4rem;
-}
-
-#contact-section .fade {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* footer inside contact */
-#contact-section footer {
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    opacity: 0.4;
-    background: transparent;
-    padding: 0;
-    width: 100%;
-    text-align: left;
-}
-
-
 /* ================================
    FADE IN ANIMATION
 ================================ */
@@ -180,7 +84,7 @@ section {
 .profile-card {
     position: fixed;
     top: 17rem;
-    left: 14rem;
+    left: 14rem;        /* consistent left anchor */
     width: 260px;
     height: auto;
     background: #aa844f;
@@ -238,29 +142,26 @@ section {
 /* ================================
    SECTIONS — padding & alignment
 ================================ */
-.home {
+
+/* all sections centered, consistent padding */
+.home,
+.about,
+.projects,
+.contact,
+.game {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2rem;
-    padding-right: 20rem;
-}
-
-.about,
-.projects,
-.contact,
-.game {
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 2rem 4rem;
 }
 
 /* ================================
    TYPOGRAPHY
 ================================ */
-.me-name{
+.me-name {
     color: #ffffff;
     font-family: 'Skalinyas', sans-serif;
     font-size: 20rem;
@@ -326,19 +227,111 @@ section {
     margin-top: 1rem;
 }
 
+/* ================================
+   CONTACT SECTION
+================================ */
+.contact-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 1.5rem;
+}
 
+.contact-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 600px;
+}
 
+.contact-sub {
+    font-size: 1rem;
+    opacity: 0.6;
+    max-width: 480px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 480px;
+    width: 100%;
+}
+
+.contact-card {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-card:last-child {
+    border-bottom: none;
+}
+
+.contact-card-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #a58559;
+    opacity: 0.8;
+}
+
+.contact-card a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease;
+}
+
+.contact-card a:hover {
+    opacity: 0.6;
+}
+
+#contact-section {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    /* centered */
+    padding: 2rem 4rem;
+}
+
+#contact-section .fade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* centered */
+    width: 100%;
+    max-width: 600px;       /* readable width, not full stretch */
+}
+
+#contact-section footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    opacity: 0.4;
+    background: transparent;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
 
 /* ================================
    RESPONSIVE
 ================================ */
 
-/* Half screen / small laptop */
+/* Small laptop / half screen */
 @media (max-width: 1024px) {
-    .home{
-        padding-left: 10rem;
-    }
-
     .profile-card {
         width: 200px;
         top: 5rem;
@@ -349,8 +342,24 @@ section {
         margin-left: 220px;
     }
 
+    .home,
+    .about,
+    .projects,
+    .contact,
+    .game {
+        padding: 2rem 2rem;
+    }
+
     .pillars {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portf {
+        font-size: 7rem;
+    }
+
+    .me-name {
+        font-size: 12rem;
     }
 }
 
@@ -370,12 +379,20 @@ section {
         padding: 1rem 1rem 60px 1rem;
     }
 
-    .home {
-        padding: 0 1rem;
+    .home,
+    .about,
+    .projects,
+    .contact,
+    .game {
+        padding: 2rem 1.5rem;
     }
 
     .portf {
-        font-size: 5rem; /* scale down large heading */
+        font-size: 5rem;
+    }
+
+    .me-name {
+        font-size: 6rem;
     }
 
     .pillars {
@@ -388,17 +405,6 @@ section {
 
     #contact-section {
         padding: 2rem 1.5rem;
-        align-items: center;
-    }
-
-    #contact-section .fade {
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact-heading,
-    .contact-sub {
-        text-align: center;
     }
 }
 
@@ -412,13 +418,15 @@ section {
         font-size: 3rem;
     }
 
+    .me-name {
+        font-size: 4rem;
+    }
+
     .pillars {
         grid-template-columns: 1fr;
     }
 
-    .profile-card {
-        width: 200px;
-        top: 5rem;
-        left: 1rem;
+    .contact-heading {
+        font-size: 1.75rem;
     }
 }
