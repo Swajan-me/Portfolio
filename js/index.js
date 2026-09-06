@@ -1,7 +1,7 @@
 const roles = [
-  "Game Developer",
   "Aspiring QA Engineer",
-  "Software Developer"
+  "Zealous Game Developer",
+  // "Software Developer"
 ];
 
 let roleIndex = 0;

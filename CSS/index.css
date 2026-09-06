@@ -13,6 +13,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'WyndhamGothic';
+    src: url('../fonts/WyndhamGothic.ttf') format('opentype');
+    font-display: swap;
+}
+
 /* ================================
    RESET
 ================================ */
@@ -37,6 +43,47 @@ html {
     height: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+/* ================================
+   NAME INTRO OVERLAY
+================================ */
+.name-intro {
+    position: fixed;
+    inset: 0;
+    background: #1a1a1a; /* or match your site bg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 3s ease;
+}
+
+.name-intro.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.intro-name {
+    font-family: 'WyndhamGothic', sans-serif;
+    font-size: 15rem;
+    color: #ffffff;
+    display: flex;
+    gap: 0.05em;
+}
+
+.intro-letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translate(-40px, 40px); /* diagonal start — bottom left */
+    animation: letterIn 0.4s ease forwards;
+}
+
+@keyframes letterIn {
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 /* ================================
@@ -83,8 +130,7 @@ section {
 ================================ */
 .profile-card {
     position: fixed;
-    top: 17rem;
-    left: 14rem;        /* consistent left anchor */
+    top: 15rem;
     width: 260px;
     height: auto;
     background: #aa844f;
