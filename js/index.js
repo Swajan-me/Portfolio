@@ -67,3 +67,26 @@ const profileObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 profileObserver.observe(homeSection);
+
+const name = "Swajan Rajbanshi";
+const introName = document.getElementById('introName');
+const nameIntro = document.getElementById('nameIntro');
+
+// split name into letters and animate each
+name.split('').forEach((letter, i) => {
+    const span = document.createElement('span');
+    span.classList.add('intro-letter');
+    span.textContent = letter;
+    span.style.animationDelay = `${i * 0.2}s`; // stagger each letter
+    introName.appendChild(span);
+});
+
+// after all letters appear, fade the overlay out
+const totalDuration = name.length * 150 + 1200; // stagger + hold time
+setTimeout(() => {
+    nameIntro.classList.add('hide');
+
+    setTimeout(() => {
+        nameIntro.remove();
+    }, 1000);
+}, totalDuration);
