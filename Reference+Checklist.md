@@ -3,6 +3,7 @@
 - Make the site something nice, something you would like to see.
 - Need to make change so that the Doctor font shows in a different place other than my name; currently thinking, it should show up doing the bomb or something.
 - Change Image file from jpg, png to a webfile or websomething.
+- Animation for intro.
 - ~~**Pull Projects from github and show their display MD file on that project when hovered.**~~ **DONE**
 - ~~Landing page ought to have animation like effect where the profile card is to be elongated enough to cover the whole page and when the page is scrolled it should come the state that it is in right now.~~ **DONE? yeah.**
 - ~~Draw something on the games sections to get something out of it, interactive and rewarding.~~ **_Cancelled_**
