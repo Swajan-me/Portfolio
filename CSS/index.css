@@ -413,6 +413,9 @@ section {
 @media (max-width: 768px) {
     .profile-card {
         display: none;
+        width: 200px;
+        top: 5rem;
+        left: 1rem;
     }
 
     .layout {
@@ -452,27 +455,84 @@ section {
     #contact-section {
         padding: 2rem 1.5rem;
     }
+
+    .intro-name {
+        font-size: 5rem;  
+    }
 }
 
 /* Phone */
 @media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
     .content {
-        padding: 0.5rem 0.5rem 60px 0.5rem;
+        padding: 1.5rem 1.5rem 60px 1.5rem; 
     }
 
     .portf {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .me-name {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .pillars {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;            
+        margin-top: 1.5rem;
+    }
+
+    .pillar-card {
+        border: 1.5px solid rgba(255,255,255,0.15);
+        border-radius: 12px;      
+        padding: 1rem;            
+        background: transparent;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+        text-align: center;
+    }
+
+    .pillar-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255,255,255,0.4);
+    }
+
+    .about-icon {
+        font-size: 2.5rem;        /* reduced from 5rem */
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .pillar-card p {
+        font-size: 0.8rem;
+        margin: 0;
     }
 
     .contact-heading {
         font-size: 1.75rem;
+    }
+
+    .about-icon {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .intro-name {
+        font-size: 3.5rem;
+    }
+
+    .intro-letter {
+        transform: translate(-20px, 20px); 
     }
 }
