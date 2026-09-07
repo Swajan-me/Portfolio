@@ -1,8 +1,8 @@
 const navbar = `
 <div class="container">
     <nav class="navBar">
-        <a href="/index.html">
-            <img class="logo" src="./Images/dog.jpg" alt="Profile" height="50px" width="50px">
+        <a href="./index.html">
+            <img class="logo" src="./Images/m2.webp" alt="Profile" height="50px" width="50px">
         </a>
         <ul>
             <li><a href="./index.html">Home</a></li>
